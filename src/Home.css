@@ -1,0 +1,133 @@
+:root{
+    --main-color: #582F0E;
+    --button-color: #DDB892;
+    --trasperent-color: rgba(255, 255, 255, 0.8);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background-image: url('./components/assets/main.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 96vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.content {
+    background: var(--trasperent-color);
+    opacity: 100%;
+    padding: 40px;
+    border-radius: 40px;
+    max-width: 530px;
+    max-height: 490px;
+    margin-left: 50%;
+    margin-top: 12%;
+}
+
+.context h1{
+    color: var(--main-color);
+    font-size: 48px;
+}
+
+.context p{
+    color: var(--main-color);
+    font-size: 18px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8%;
+    margin-left: 59%;
+}
+
+.stats div {
+    margin: 0 5px;
+}
+
+.stats div span {
+    font-size: 40px;
+}
+
+.plus {
+    color: var(--button-color);
+}
+
+.try-free {
+    background-color: var(--trasperent-color);
+    font-size: 20px;
+    color: var(--main-color);
+    opacity: 100%;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-top: 25px;
+    max-width: 400px;
+    border-radius: 40px;
+    margin-left: 69%;
+    text-decoration: none;
+}
+
+.divider {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 64px;
+    color: white;
+    line-height: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero {
+        height: 80vh; 
+        padding: 10px; 
+    }
+    .content {
+        padding: 20px; 
+        max-width: 90%; 
+        margin-left: 5%; 
+    }
+    .try-free {
+        font-size: 18px; 
+        margin-left: 5%; 
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .hero {
+        height: 90vh; 
+    }
+    .content {
+        max-width: 80%; 
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .hero {
+        height: 96vh; 
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .content {
+        max-width: 530px; 
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .content {
+        max-width: 600px; 
+    }
+}

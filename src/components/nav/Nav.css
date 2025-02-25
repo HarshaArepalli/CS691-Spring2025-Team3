@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Irish+Grover&display=swap');
+:root{
+    --main-color: #582F0E;
+    --button-color: #DDB892;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 252, 252, 0.5);
+    height: 30px;
+    position: fixed;
+    border: 5px #582F0E;
+    top: 2%;
+    left: 4.2%;
+    width: 100%;
+    border-radius: 40px;
+}
+
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--main-color);
+    font-family: 'Inria Sans', sans-serif;
+}
+
+.nav-title {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Irish Grover";
+    color: var(--main-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav-signup{
+    height: 30px;
+    margin-left: auto;
+}
+
+.nav-signup button {
+    background-color: var(--button-color);
+    color: var(--main-color);
+    width: 80px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    font-weight: bold;
+    font-family: 'Inria Sans', sans-serif;
+    height: 100%;
+    text-decoration: none;
+}
+
+.nav-signup button:hover {
+    background-color: var(--main-color);
+    color: var(--button-color);
+    transform: scale(1.05);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        height: 50px; 
+        padding: 5px; 
+    }
+    .nav-title {
+        font-size: 24px; 
+    }
+    .nav-links a {
+        margin: 0 10px; 
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .navbar {
+        height: 40px; 
+    }
+    .nav-title {
+        font-size: 28px; 
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .navbar {
+        height: 30px; 
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .navbar {
+        padding: 10px; 
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .navbar {
+        width: 90%; 
+    }
+}

@@ -45,3 +45,4 @@ Eat and Fit is a comprehensive fitness application designed to help users improv
 ### 9. Educational Content
 - Articles, videos, and tutorials on nutrition, exercise techniques, and healthy living tips.
 
+### member details
